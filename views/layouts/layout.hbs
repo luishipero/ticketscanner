@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/mystyles.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- bootstrap javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" crossorigin="anonymous">
+
+
+    <title>Handlebars demo</title> 
+</head>
+<body>
+    <header id="homepage">
+        <div class="center"><h1>pesquisa pelo teu
+            <div class="scroll-wrap">
+                <div class="scroller">
+                    <div class="scroll-item">espectáculo</div>
+                    <div class="scroll-item">evento</div>
+                    <div class="scroll-item">concerto</div>
+                    <div class="scroll-item">festival</div>
+                    <div class="scroll-item">artista</div>
+                </div>
+            </div>
+            </h1>
+        </div>
+    </header> 
+    <div class="center">
+        <form method="post" action="/">
+        <div class="form-field">
+          <label for="ticket"></label>
+          <input class="input" id="ticket" name="ticket" type="text" autofocus required>
+          <input type="submit" class="btn btn-primary">
+        </div>
+      </form>
+    </div>   
+    {{{body}}}
+</body>
+</html>

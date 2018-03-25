@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="search-result">
+        {{#each myArray}}
+            <div class="item-group" style='display: flex;  flex-direction: row;'>
+                <a href='{{Url}}' target='_blank'> 
+                    <img class="" src='{{ImagemLink}}' height='110' width='80'>
+                    <div class="item-content-title">{{Nome}}</div>
+                    <div class="">{{DataExtenso}}</div>
+                    <span class="">{{Local}}</span>
+                </a>
+            </div>
+        {{/each}}
+    </div>
+    {{#noResults}}
+    <div>
+        Não foram encontrados resultados para <strong>{{searchTerm}}</strong>
+    </div>
+    {{/noResults}}
+</div>    
