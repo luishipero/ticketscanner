@@ -11,9 +11,9 @@ var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
-var methodOverride = require('method-override');
+//var methodOverride = require('method-override');
 var path    = require('path');
-var request = require('request');
+//var request = require('request');
 var htmlparser = require('htmlparser2');
 
 
@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public'))); 		// set the static fil
 app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser.urlencoded({'extended': 'true'})); // parse application/x-www-form-urlencoded
 app.use(bodyParser.json()); // parse application/json
-app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-Method-Override header in the request
+//app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-Method-Override header in the request
 
 
 // view engine setup
